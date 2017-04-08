@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="/stylesheets/news.css">
+  </head>
+
+  <body>
+    <h1>Article Listing</h1>
+
+    <h3><%= @error_message %></h3>
+
+      <% @articles.each do |article| %>
+        <h4><span>Title: <%= article['title'] %> URL: <a href='<%= article['url'] %>' target="_blank"> <%= article['url'] %></a> Description: <%= article['description'] %></span></h4>
+      <% end %>
+
+      <div class="links">
+        <a href="/"><span>Back to Home</span></a>
+        <a href="/articles/new"><span>Submit Another Article</span></a>
+      </div>
+  </body>
+</html>
