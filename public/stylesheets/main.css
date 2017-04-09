@@ -1,4 +1,35 @@
 body {
-  background-color: blue;
+  background-color: lightblue;
   text-align: center;
+  font-family: 'Palaquin Dark', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: red;
+  font-weight: bold;
+}
+
+form {
+  margin: 50px;
+}
+
+a:hover {
+  color: orange;
+}
+
+.links {
+  margin: 20px;
+}
+
+img {
+  border-radius: 30px;
 }

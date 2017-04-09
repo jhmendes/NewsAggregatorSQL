@@ -35,7 +35,7 @@ end
 get "/articles" do
 # @error_message = "Article with same url already submitted"
 
-@articles = db_connection { |conn| conn.exec("SELECT title, url, description FROM articles") }
+@articles = db_connection { |conn| conn.exec("SELECT title, url, description FROM articles ORDER BY title") }
 
 erb :index
 
